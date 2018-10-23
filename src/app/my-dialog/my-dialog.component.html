@@ -1,0 +1,19 @@
+<h2 mat-dialog-title>Edit</h2>
+<div class="col-xs-8"> 
+    <div class="form-group">
+        <label>ID</label>
+        <input class="form-control" name="id" disabled [(ngModel)]="data.id" />
+    </div>
+  <div class="form-group">
+      <label>Name</label>
+      <input class="form-control" name="title" [(ngModel)]="data.name" />
+  </div>
+  <div class="form-group">
+      <label>Price</label>
+      <input type="number" class="form-control" name="price" [(ngModel)]="data.price" />
+  </div>
+    <div class="form-group">
+      <button class="btn btn-default" (click)="updateItem(data.id,data.name, data.price)">Save</button>
+  </div>
+</div>
+
